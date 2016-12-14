@@ -37,10 +37,10 @@ public class ClassController {
     @RequestMapping(value = "/admin/Classes/add", method = RequestMethod.GET)
     public String addClass(ModelMap modelMap) {
         // 查询user表中所有记录
-        List<ClassEntity> ClassList = classRepository.findAll();
+        //List<ClassEntity> ClassList = classRepository.findAll();
 
         // 将所有记录传递给要返回的jsp页面，放在userList当中
-        modelMap.addAttribute("ClassList", ClassList);
+        //modelMap.addAttribute("ClassList", ClassList);
 
         // 转到 admin/addUser.jsp页面
         return "admin/addCLasses";
