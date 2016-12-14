@@ -7,7 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -46,7 +45,7 @@
         </div>
         <div class="form-group">
             <label for="sumStu">学生总数:</label>
-            <input type="date" class="form-control" id="sumStu" name="sumStu" placeholder="Enter Sum of Students:"/>
+            <input type="number" class="form-control" id="sumStu" name="sumStu" placeholder="Enter Sum of Students:"/>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-sm btn-success">提交</button>

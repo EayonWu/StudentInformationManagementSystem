@@ -29,15 +29,15 @@
 </head>
 <body>
 <div class="container">
-    <h1>学生信息管理系统 - 课程信息管理</h1>
+    <h1>学生信息管理系统 - 班级信息管理</h1>
     <hr/>
 
-    <h3>所有学生 <a href="/admin/Classess/add" type="button" class="btn btn-primary btn-sm">添加</a></h3>
+    <h3>所有学生 <a href="/admin/Classes/add" type="button" class="btn btn-primary btn-sm">添加</a></h3>
 
     <!-- 如果用户列表为空 -->
     <c:if test="${empty ClassList}">
         <div class="alert alert-warning" role="alert">
-            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>课程信息表为空，请<a href="/admin/Classess/add" type="button" class="btn btn-primary btn-sm">添加</a>
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>班级信息表为空，请<a href="/admin/Classes/add" type="button" class="btn btn-primary btn-sm">添加</a>
         </div>
     </c:if>
 
@@ -45,8 +45,8 @@
     <c:if test="${!empty ClassList}">
         <table class="table table-bordered table-striped">
             <tr>
-                <th>课程号</th>
-                <th>课程名</th>
+                <th>班级号</th>
+                <th>班级名</th>
                 <th>年级</th>
                 <th>学生总数</th>
             </tr>
